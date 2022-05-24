@@ -64,7 +64,8 @@ filelist.txt
 # ignore Quartus generated folders
 */db/
 */incremental_db/
-simulation/
+# If you wish to keep simulation
+#simulation/
 */timing/
 */testbench/
 */*_sim/
