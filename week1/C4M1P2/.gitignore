@@ -1,0 +1,5 @@
+#simulation files
+simulation/*
+!simulation/modelsim
+simulation/modelsim/*
+!simulation/modelsim/*.wlf

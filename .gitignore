@@ -45,7 +45,7 @@
 *.qws
 *.rpt
 *.smsg
-# remove comment if one wishes to keep programming files
+# remove comment if one wishes to unkeep programming files versionning
 #*.sof
 #*.pof
 
@@ -64,15 +64,12 @@ filelist.txt
 # ignore Quartus generated folders
 */db/
 */incremental_db/
-# If you wish to keep simulation
-#simulation/
 */timing/
 */testbench/
 */*_sim/
 incremental_db/
 db/
 PLLJ_PLLSPE_INFO.txt
-
 
 *.zip
 *.tmp
