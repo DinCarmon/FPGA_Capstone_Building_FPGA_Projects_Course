@@ -43,14 +43,8 @@
 *.qar
 *.qarlog
 *.qws
-*.rpt
 *.smsg
-# remove comment if one wishes to unkeep programming files versionning
-#*.sof
-#*.pof
-
 *.sopc_builder
-*.summary
 *.tcl
 *.txt # Explicitly add any text files used
 *~
@@ -60,6 +54,13 @@ filelist.txt
 *.cdf
 *.sld
 *.qdf
+
+# remove comment if one wishes to unkeep programming files versionning
+#*.sof
+#*.pof
+# report files
+#*.rpt
+#*.summary
 
 # ignore Quartus generated folders
 */db/

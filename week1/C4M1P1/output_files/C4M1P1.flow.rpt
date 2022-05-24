@@ -1,0 +1,130 @@
+Flow report for C4M1P1
+Tue May 10 22:47:15 2022
+Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2021  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Tue May 10 22:47:10 2022       ;
+; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
+; Revision Name                      ; C4M1P1                                      ;
+; Top-level Entity Name              ; DE10_LITE_Golden_Top                        ;
+; Family                             ; MAX 10                                      ;
+; Device                             ; 10M50DAF484C6GES                            ;
+; Timing Models                      ; Preliminary                                 ;
+; Total logic elements               ; 15 / 49,760 ( < 1 % )                       ;
+;     Total combinational functions  ; 15 / 49,760 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 0 / 49,760 ( 0 % )                          ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 185 / 360 ( 51 % )                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
+; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/10/2022 22:46:34 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; C4M1P1              ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                 ;
++-------------------------------------+----------------------------------------+---------------+----------------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name          ; Section Id ;
++-------------------------------------+----------------------------------------+---------------+----------------------+------------+
+; COMPILER_SIGNATURE_ID               ; 180649680940978.165221199406260        ; --            ; --                   ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --                   ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --                   ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DE10_LITE_Golden_Top ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; DE10_LITE_Golden_Top ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; DE10_LITE_Golden_Top ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --                   ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                   ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --                   ; --         ;
+; TOP_LEVEL_ENTITY                    ; DE10_LITE_Golden_Top                   ; C4M1P1        ; --                   ; --         ;
+; VHDL_INPUT_VERSION                  ; VHDL_2008                              ; VHDL_1993     ; --                   ; --         ;
+; VHDL_SHOW_LMF_MAPPING_MESSAGES      ; Off                                    ; --            ; --                   ; --         ;
++-------------------------------------+----------------------------------------+---------------+----------------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4792 MB             ; 00:00:32                           ;
+; Fitter               ; 00:00:14     ; 1.0                     ; 5372 MB             ; 00:00:16                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4721 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4825 MB             ; 00:00:04                           ;
+; Total                ; 00:00:38     ; --                      ; --                  ; 00:00:56                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; Dean_Laptop      ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; Dean_Laptop      ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; Dean_Laptop      ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; Dean_Laptop      ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off C4M1P1 -c C4M1P1
+quartus_fit --read_settings_files=off --write_settings_files=off C4M1P1 -c C4M1P1
+quartus_asm --read_settings_files=off --write_settings_files=off C4M1P1 -c C4M1P1
+quartus_sta C4M1P1 -c C4M1P1
+
+
+

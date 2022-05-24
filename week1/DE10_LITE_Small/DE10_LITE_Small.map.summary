@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Tue May 24 17:17:49 2022
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Revision Name : DE10_LITE_Small
+Top-level Entity Name : DE10_LITE_Small
+Family : MAX 10
+Total logic elements : 126
+    Total combinational functions : 124
+    Dedicated logic registers : 75
+Total registers : 75
+Total pins : 69
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
