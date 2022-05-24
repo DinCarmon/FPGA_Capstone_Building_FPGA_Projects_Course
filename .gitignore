@@ -1,7 +1,7 @@
-# Working with Altera Quartus II (Q2) and do proper versioning is not that easy
+# Working with Altera Quartus and do proper versioning is not that easy
 # but if you follow some rules it can be accomplished. :)
 # This file should be placed into the main directory where the .qpf file is
-# found. Generally Q2 throws all entities and so on in the main directory, but
+# found. Generally Quartus throws all entities and so on in the main directory, but
 # you can place all stuff also in separate folders. This approach is followed
 # here. So when you create a new design create one or more folders where your
 # entities will be located and put a .gitignore in there that overrides the
@@ -26,7 +26,7 @@
 # *.vhd
 # *.v
 
-# ignore Quartus II generated files
+# ignore Quartus generated files
 *_generation_script*
 *_inst.vhd
 *.bak
@@ -39,14 +39,16 @@
 *.jpg
 # *.mif
 *.pin
-*.pof
 *.ptf.*
 *.qar
 *.qarlog
 *.qws
 *.rpt
 *.smsg
-*.sof
+# remove comment if one wishes to keep programming files
+#*.sof
+#*.pof
+
 *.sopc_builder
 *.summary
 *.tcl
@@ -54,16 +56,24 @@
 *~
 *example*
 *sopc_*
-# *.sdc # I want those timing files
+filelist.txt
+*.cdf
+*.sld
+*.qdf
 
-# ignore Quartus II generated folders
+# ignore Quartus generated folders
 */db/
 */incremental_db/
-*/simulation/
+simulation/
 */timing/
 */testbench/
 */*_sim/
 incremental_db/
 db/
-_output_files/
 PLLJ_PLLSPE_INFO.txt
+
+
+*.zip
+*.tmp
+#temporary files created by word
+~*.docx
