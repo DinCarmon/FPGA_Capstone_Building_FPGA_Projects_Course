@@ -54,6 +54,7 @@ filelist.txt
 *.cdf
 *.sld
 *.qdf
+*.CFG
 
 # remove comment if one wishes to unkeep programming files versionning
 #*.sof
