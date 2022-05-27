@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sun Sep 24 16:25:09 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : pwm_led_top
+Top-level Entity Name : pwm_led_top
+Family : MAX 10
+Total logic elements : 41
+    Total combinational functions : 17
+    Dedicated logic registers : 31
+Total registers : 31
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
+UFM blocks : 0
+ADC blocks : 0

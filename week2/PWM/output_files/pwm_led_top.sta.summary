@@ -1,0 +1,89 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'b2v_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 11.728
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'b2v_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 33331.510
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'b2v_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.429
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'b2v_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.429
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : 9.775
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'b2v_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.772
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'b2v_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 16666.438
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'b2v_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 11.837
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'b2v_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 33331.635
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'b2v_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'b2v_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : 9.783
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'b2v_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.722
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'b2v_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 16666.387
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'b2v_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 12.557
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'b2v_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 33332.469
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'b2v_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.211
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'b2v_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.211
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : 9.530
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'b2v_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 19.804
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'b2v_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 16666.470
+TNS   : 0.000
+
+------------------------------------------------------------

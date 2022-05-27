@@ -55,6 +55,7 @@ filelist.txt
 *.sld
 *.qdf
 *.CFG
+qar_info.json
 
 # remove comment if one wishes to unkeep programming files versionning
 #*.sof
