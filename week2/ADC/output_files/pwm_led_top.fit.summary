@@ -1,18 +1,18 @@
-Fitter Status : Successful - Sun Sep 24 16:25:20 2017
-Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Fitter Status : Successful - Sat May 28 10:43:33 2022
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : pwm_led_top
 Top-level Entity Name : pwm_led_top
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 33 / 49,760 ( < 1 % )
-    Total combinational functions : 18 / 49,760 ( < 1 % )
-    Dedicated logic registers : 31 / 49,760 ( < 1 % )
-Total registers : 31
-Total pins : 6 / 360 ( 2 % )
+Total logic elements : 1,102 / 49,760 ( 2 % )
+    Total combinational functions : 916 / 49,760 ( 2 % )
+    Dedicated logic registers : 607 / 49,760 ( 1 % )
+Total registers : 607
+Total pins : 50 / 360 ( 14 % )
 Total virtual pins : 0
-Total memory bits : 0 / 1,677,312 ( 0 % )
+Total memory bits : 512 / 1,677,312 ( < 1 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
-Total PLLs : 1 / 4 ( 25 % )
+Total PLLs : 2 / 4 ( 50 % )
 UFM blocks : 0 / 1 ( 0 % )
-ADC blocks : 0 / 2 ( 0 % )
+ADC blocks : 1 / 2 ( 50 % )

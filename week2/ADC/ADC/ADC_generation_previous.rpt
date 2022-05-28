@@ -1,0 +1,80 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\dinca\Documents\FPGA_Coursera_Course\Capstone\FPGA_Capstone_Building_FPGA_Projects_Course\week2\ADC\ADC.qsys --block-symbol-file --output-directory=C:\Users\dinca\Documents\FPGA_Coursera_Course\Capstone\FPGA_Capstone_Building_FPGA_Projects_Course\week2\ADC\ADC --family="MAX 10" --part=10M50DAF484C6GES
+Progress: Loading ADC/ADC.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 21.1]
+Progress: Parameterizing module altpll_0
+Progress: Adding clk_0 [clock_source 21.1]
+Progress: Parameterizing module clk_0
+Progress: Adding master_0 [altera_jtag_avalon_master 21.1]
+Progress: Parameterizing module master_0
+Progress: Adding mm_bridge_0 [altera_avalon_mm_bridge 21.1]
+Progress: Parameterizing module mm_bridge_0
+Progress: Adding modular_adc_0 [altera_modular_adc 21.1]
+Progress: Parameterizing module modular_adc_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: ADC.mm_bridge_0.m0/modular_adc_0.sequencer_csr: Master mm_bridge_0.m0 cannot safely write to slave modular_adc_0.sequencer_csr, because the master data width is narrower than the slave data width. Add byteenable support to the slave to support safe writes from a narrow master.
+Warning: ADC.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\dinca\Documents\FPGA_Coursera_Course\Capstone\FPGA_Capstone_Building_FPGA_Projects_Course\week2\ADC\ADC.qsys --synthesis=VERILOG --output-directory=C:\Users\dinca\Documents\FPGA_Coursera_Course\Capstone\FPGA_Capstone_Building_FPGA_Projects_Course\week2\ADC\ADC\synthesis --family="MAX 10" --part=10M50DAF484C6GES
+Progress: Loading ADC/ADC.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 21.1]
+Progress: Parameterizing module altpll_0
+Progress: Adding clk_0 [clock_source 21.1]
+Progress: Parameterizing module clk_0
+Progress: Adding master_0 [altera_jtag_avalon_master 21.1]
+Progress: Parameterizing module master_0
+Progress: Adding mm_bridge_0 [altera_avalon_mm_bridge 21.1]
+Progress: Parameterizing module mm_bridge_0
+Progress: Adding modular_adc_0 [altera_modular_adc 21.1]
+Progress: Parameterizing module modular_adc_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: ADC.mm_bridge_0.m0/modular_adc_0.sequencer_csr: Master mm_bridge_0.m0 cannot safely write to slave modular_adc_0.sequencer_csr, because the master data width is narrower than the slave data width. Add byteenable support to the slave to support safe writes from a narrow master.
+Warning: ADC.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Info: ADC: Generating ADC "ADC" for QUARTUS_SYNTH
+Info: altpll_0: "ADC" instantiated altpll "altpll_0"
+Info: master_0: "ADC" instantiated altera_jtag_avalon_master "master_0"
+Info: mm_bridge_0: "ADC" instantiated altera_avalon_mm_bridge "mm_bridge_0"
+Info: modular_adc_0: "ADC" instantiated altera_modular_adc "modular_adc_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "ADC" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "ADC" instantiated altera_reset_controller "rst_controller"
+Info: jtag_phy_embedded_in_jtag_master: "master_0" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: timing_adt: "master_0" instantiated timing_adapter "timing_adt"
+Info: fifo: "master_0" instantiated altera_avalon_sc_fifo "fifo"
+Info: b2p: "master_0" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: p2b: "master_0" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: transacto: "master_0" instantiated altera_avalon_packets_to_master "transacto"
+Info: b2p_adapter: "master_0" instantiated channel_adapter "b2p_adapter"
+Info: p2b_adapter: "master_0" instantiated channel_adapter "p2b_adapter"
+Info: control_internal: "modular_adc_0" instantiated altera_modular_adc_control "control_internal"
+Info: sequencer_internal: "modular_adc_0" instantiated altera_modular_adc_sequencer "sequencer_internal"
+Info: mm_bridge_0_m0_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "mm_bridge_0_m0_translator"
+Info: modular_adc_0_sequencer_csr_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "modular_adc_0_sequencer_csr_translator"
+Info: mm_bridge_0_m0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "mm_bridge_0_m0_agent"
+Info: modular_adc_0_sequencer_csr_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "modular_adc_0_sequencer_csr_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/dinca/Documents/FPGA_Coursera_Course/Capstone/FPGA_Capstone_Building_FPGA_Projects_Course/week2/ADC/ADC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: mm_bridge_0_m0_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "mm_bridge_0_m0_rsp_width_adapter"
+Info: Reusing file C:/Users/dinca/Documents/FPGA_Coursera_Course/Capstone/FPGA_Capstone_Building_FPGA_Projects_Course/week2/ADC/ADC/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: ADC: Done "ADC" with 31 modules, 54 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
