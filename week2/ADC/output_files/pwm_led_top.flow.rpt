@@ -1,5 +1,5 @@
 Flow report for pwm_led_top
-Sat May 28 10:43:51 2022
+Sat May 28 11:54:08 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat May 28 10:43:51 2022       ;
+; Flow Status                        ; Successful - Sat May 28 11:54:08 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; pwm_led_top                                 ;
 ; Top-level Entity Name              ; pwm_led_top                                 ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C6GES                            ;
 ; Timing Models                      ; Preliminary                                 ;
-; Total logic elements               ; 1,102 / 49,760 ( 2 % )                      ;
-;     Total combinational functions  ; 916 / 49,760 ( 2 % )                        ;
+; Total logic elements               ; 1,100 / 49,760 ( 2 % )                      ;
+;     Total combinational functions  ; 912 / 49,760 ( 2 % )                        ;
 ;     Dedicated logic registers      ; 607 / 49,760 ( 1 % )                        ;
 ; Total registers                    ; 607                                         ;
 ; Total pins                         ; 50 / 360 ( 14 % )                           ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/28/2022 10:42:35 ;
+; Start date & time ; 05/28/2022 11:52:57 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pwm_led_top         ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 180649680940978.165372375519060                       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 180649680940978.165372797603600                       ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; Questa Intel FPGA (Verilog)                           ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                                  ; --            ; --          ; eda_simulation ;
@@ -99,7 +99,7 @@ https://fpgasoftware.intel.com/eula.
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                 ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                          ; --            ; --          ; --             ;
 ; SLD_FILE                            ; ADC/synthesis/ADC.debuginfo                           ; --            ; --          ; --             ;
-; SLD_INFO                            ; QSYS_NAME ADC HAS_SOPCINFO 1 GENERATION_ID 1653722598 ; --            ; ADC         ; --             ;
+; SLD_INFO                            ; QSYS_NAME ADC HAS_SOPCINFO 1 GENERATION_ID 1653727922 ; --            ; ADC         ; --             ;
 ; SOPCINFO_FILE                       ; ADC/synthesis/../../ADC.sopcinfo                      ; --            ; --          ; --             ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                    ; --            ; --          ; --             ;
 +-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
@@ -110,12 +110,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:38     ; 1.0                     ; 4871 MB             ; 00:01:06                           ;
-; Fitter               ; 00:00:18     ; 1.1                     ; 5391 MB             ; 00:00:22                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4743 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.2                     ; 4826 MB             ; 00:00:06                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4689 MB             ; 00:00:03                           ;
-; Total                ; 00:01:09     ; --                      ; --                  ; 00:01:42                           ;
+; Analysis & Synthesis ; 00:00:39     ; 1.0                     ; 4873 MB             ; 00:01:06                           ;
+; Fitter               ; 00:00:15     ; 1.1                     ; 5397 MB             ; 00:00:18                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4727 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.2                     ; 4845 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4689 MB             ; 00:00:02                           ;
+; Total                ; 00:01:05     ; --                      ; --                  ; 00:01:34                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
