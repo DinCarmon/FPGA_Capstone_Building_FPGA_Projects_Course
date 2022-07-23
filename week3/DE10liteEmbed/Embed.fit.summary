@@ -1,0 +1,18 @@
+Fitter Status : Successful - Sat Jul 23 13:47:55 2022
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : Embed
+Top-level Entity Name : DE10_LITE_Default
+Family : MAX 10
+Device : 10M50DAF484C6GES
+Timing Models : Preliminary
+Total logic elements : 11,492 / 49,760 ( 23 % )
+    Total combinational functions : 9,520 / 49,760 ( 19 % )
+    Dedicated logic registers : 7,310 / 49,760 ( 15 % )
+Total registers : 7379
+Total pins : 185 / 360 ( 51 % )
+Total virtual pins : 0
+Total memory bits : 759,864 / 1,677,312 ( 45 % )
+Embedded Multiplier 9-bit elements : 6 / 288 ( 2 % )
+Total PLLs : 3 / 4 ( 75 % )
+UFM blocks : 1 / 1 ( 100 % )
+ADC blocks : 1 / 2 ( 50 % )
