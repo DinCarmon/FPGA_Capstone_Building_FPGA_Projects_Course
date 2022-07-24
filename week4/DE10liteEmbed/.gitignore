@@ -1,0 +1,7 @@
+#simulation files
+simulation/*
+!simulation/modelsim
+simulation/modelsim/*
+!simulation/modelsim/*.wlf
+Embed/
+eclipse_workspace/.metadata

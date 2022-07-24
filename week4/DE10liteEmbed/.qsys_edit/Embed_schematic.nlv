@@ -1,0 +1,67 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst Embed.nios2_gen2_0.cpu -pg 1
+preplace inst Embed.modular_adc_0.st_splitter_internal -pg 1
+preplace inst Embed.modular_adc_0.sample_store_internal -pg 1
+preplace inst Embed.modular_adc_0.sequencer_internal -pg 1
+preplace inst Embed.modular_adc_0.adc_monitor_internal -pg 1
+preplace inst Embed.modular_adc_0 -pg 1 -lvl 6 -y 420
+preplace inst Embed.altpll_0 -pg 1 -lvl 3 -y 430
+preplace inst Embed -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst Embed.altpll_1 -pg 1 -lvl 5 -y 600
+preplace inst Embed.modular_adc_0.adc_monitor_internal.core -pg 1
+preplace inst Embed.sdram -pg 1 -lvl 4 -y 30
+preplace inst Embed.nios2_gen2_0.clock_bridge -pg 1
+preplace inst Embed.modular_adc_0.adc_monitor_internal.reset_bridge -pg 1
+preplace inst Embed.master_0.p2b -pg 1
+preplace inst Embed.timer_0 -pg 1 -lvl 5 -y 1060
+preplace inst Embed.modular_adc_0.cb_inst -pg 1
+preplace inst Embed.nios2_gen2_0 -pg 1 -lvl 2 -y 200
+preplace inst Embed.master_0.timing_adt -pg 1
+preplace inst Embed.master_0.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst Embed.onchip_memory2_0 -pg 1 -lvl 5 -y 360
+preplace inst Embed.modular_adc_0.adc_monitor_internal.trace_endpoint -pg 1
+preplace inst Embed.modular_adc_0.rst_inst -pg 1
+preplace inst Embed.master_0.b2p_adapter -pg 1
+preplace inst Embed.master_0.clk_src -pg 1
+preplace inst Embed.master_0.transacto -pg 1
+preplace inst Embed.led_pio -pg 1 -lvl 5 -y 780
+preplace inst Embed.jtag_uart_0 -pg 1 -lvl 5 -y 880
+preplace inst Embed.onchip_flash_0 -pg 1 -lvl 5 -y 260
+preplace inst Embed.modular_adc_0.control_internal -pg 1
+preplace inst Embed.sysid -pg 1 -lvl 5 -y 980
+preplace inst Embed.master_0.b2p -pg 1
+preplace inst Embed.nios2_gen2_0.reset_bridge -pg 1
+preplace inst Embed.modular_adc_0.adc_monitor_internal.clock_bridge -pg 1
+preplace inst Embed.master_0.clk_rst -pg 1
+preplace inst Embed.clk_0 -pg 1 -lvl 1 -y 430
+preplace inst Embed.spi_0 -pg 1 -lvl 4 -y 170
+preplace inst Embed.slide_pio -pg 1 -lvl 5 -y 1160
+preplace inst Embed.mm_clock_crossing_bridge_0 -pg 1 -lvl 4 -y 330
+preplace inst Embed.clk_1 -pg 1 -lvl 4 -y 510
+preplace inst Embed.master_0.p2b_adapter -pg 1
+preplace inst Embed.master_0.fifo -pg 1
+preplace inst Embed.master_0 -pg 1 -lvl 5 -y 510
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)clk_1.clk_in_reset,(SLAVE)Embed.reset_0) 1 0 4 NJ 540 NJ 540 NJ 540 NJ
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)spi_0.external,(SLAVE)Embed.gsensor) 1 0 4 NJ 420 NJ 420 NJ 380 NJ
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)sdram.wire,(SLAVE)Embed.dram) 1 0 4 NJ 360 NJ 360 NJ 360 NJ
+preplace netloc POINT_TO_POINT<net_container>Embed</net_container>(SLAVE)modular_adc_0.adc_pll_clock,(MASTER)altpll_1.c0) 1 5 1 1790
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)Embed.altpll_1_areset_conduit,(SLAVE)altpll_1.areset_conduit) 1 0 5 NJ 610 NJ 610 NJ 610 NJ 610 NJ
+preplace netloc FAN_OUT<net_container>Embed</net_container>(SLAVE)onchip_flash_0.clk,(SLAVE)mm_clock_crossing_bridge_0.s0_clk,(SLAVE)spi_0.clk,(MASTER)altpll_0.c0,(SLAVE)sdram.clk,(SLAVE)onchip_memory2_0.clk1,(SLAVE)nios2_gen2_0.clk) 1 1 4 410 340 NJ 340 1050 140 1500
+preplace netloc FAN_OUT<net_container>Embed</net_container>(SLAVE)timer_0.irq,(SLAVE)jtag_uart_0.irq,(SLAVE)slide_pio.irq,(MASTER)nios2_gen2_0.irq,(SLAVE)spi_0.irq,(SLAVE)modular_adc_0.sample_store_irq) 1 2 4 NJ 290 1070 850 1400 770 1850
+preplace netloc FAN_OUT<net_container>Embed</net_container>(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)led_pio.s1,(MASTER)mm_clock_crossing_bridge_0.m0,(SLAVE)sysid.control_slave,(SLAVE)timer_0.s1,(SLAVE)slide_pio.s1) 1 4 1 1440
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)Embed.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)Embed.clk_0,(SLAVE)clk_1.clk_in) 1 0 4 NJ 520 NJ 520 NJ 520 NJ
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)Embed.ledr,(SLAVE)led_pio.external_connection) 1 0 5 NJ 810 NJ 810 NJ 810 NJ 810 NJ
+preplace netloc POINT_TO_POINT<net_container>Embed</net_container>(MASTER)clk_0.clk,(SLAVE)altpll_0.inclk_interface) 1 1 2 N 440 NJ
+preplace netloc FAN_OUT<net_container>Embed</net_container>(SLAVE)mm_clock_crossing_bridge_0.m0_clk,(SLAVE)sysid.clk,(SLAVE)timer_0.clk,(SLAVE)slide_pio.clk,(SLAVE)jtag_uart_0.clk,(MASTER)altpll_0.c2,(SLAVE)led_pio.clk) 1 3 2 1170 830 1420
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)Embed.modular_adc_0_adc_pll_locked,(SLAVE)modular_adc_0.adc_pll_locked) 1 0 6 NJ 750 NJ 750 NJ 750 NJ 750 NJ 750 NJ
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)altpll_1.locked_conduit,(SLAVE)Embed.altpll_1_locked_conduit) 1 0 5 NJ 670 NJ 670 NJ 670 NJ 670 NJ
+preplace netloc EXPORT<net_container>Embed</net_container>(MASTER)Embed.dram_clk,(MASTER)altpll_0.c1) 1 3 4 NJ 460 NJ 730 NJ 730 NJ
+preplace netloc FAN_OUT<net_container>Embed</net_container>(MASTER)clk_1.clk,(SLAVE)altpll_1.inclk_interface,(SLAVE)master_0.clk,(SLAVE)modular_adc_0.clock) 1 4 2 1500 470 N
+preplace netloc INTERCONNECT<net_container>Embed</net_container>(SLAVE)sdram.s1,(SLAVE)altpll_0.pll_slave,(MASTER)nios2_gen2_0.data_master,(SLAVE)modular_adc_0.sequencer_csr,(SLAVE)spi_0.spi_control_port,(SLAVE)nios2_gen2_0.debug_mem_slave,(SLAVE)altpll_1.pll_slave,(SLAVE)onchip_memory2_0.s1,(MASTER)master_0.master,(MASTER)nios2_gen2_0.instruction_master,(SLAVE)onchip_flash_0.csr,(SLAVE)onchip_flash_0.data,(SLAVE)modular_adc_0.sample_store_csr,(SLAVE)mm_clock_crossing_bridge_0.s0) 1 1 5 430 380 810 250 1130 300 1480 590 1810
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)Embed.sw,(SLAVE)slide_pio.external_connection) 1 0 5 NJ 1190 NJ 1190 NJ 1190 NJ 1190 NJ
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)clk_0.clk_in,(SLAVE)Embed.clk) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>Embed</net_container>(SLAVE)onchip_flash_0.nreset,(SLAVE)timer_0.reset,(SLAVE)spi_0.reset,(SLAVE)altpll_0.inclk_interface_reset,(SLAVE)led_pio.reset,(SLAVE)nios2_gen2_0.reset,(SLAVE)sysid.reset,(MASTER)clk_1.clk_reset,(SLAVE)master_0.clk_reset,(MASTER)nios2_gen2_0.debug_reset_request,(MASTER)master_0.master_reset,(SLAVE)jtag_uart_0.reset,(SLAVE)mm_clock_crossing_bridge_0.s0_reset,(SLAVE)onchip_memory2_0.reset1,(SLAVE)sdram.reset,(SLAVE)altpll_1.inclk_interface_reset,(MASTER)clk_0.clk_reset,(SLAVE)slide_pio.reset,(SLAVE)mm_clock_crossing_bridge_0.m0_reset,(SLAVE)modular_adc_0.reset_sink) 1 1 5 390 400 790 270 1150 160 1460 450 1770
+levelinfo -pg 1 0 180 2150
+levelinfo -hier Embed 190 220 550 860 1230 1580 1970 2070
