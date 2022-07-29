@@ -90,7 +90,7 @@
    type="avalon_streaming"
    dir="start" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
- <module name="altpll_0" kind="altpll" version="21.1" enabled="1">
+ <module name="altpll_0" kind="altpll" version="17.0" enabled="1">
   <parameter name="AUTO_DEVICE_FAMILY" value="MAX 10" />
   <parameter name="AUTO_INCLK_INTERFACE_CLOCK_RATE" value="50000000" />
   <parameter name="AVALON_USE_SEPARATE_SYSCLK" value="NO" />
@@ -257,7 +257,7 @@
   <parameter name="WIDTH_CLOCK" value="5" />
   <parameter name="WIDTH_PHASECOUNTERSELECT" value="" />
  </module>
- <module name="clk_0" kind="clock_source" version="21.1" enabled="1">
+ <module name="clk_0" kind="clock_source" version="17.0" enabled="1">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
   <parameter name="inputClockFrequency" value="0" />
@@ -266,7 +266,7 @@
  <module
    name="master_0"
    kind="altera_jtag_avalon_master"
-   version="21.1"
+   version="17.0"
    enabled="1">
   <parameter name="AUTO_DEVICE" value="10M50DAF484C6GES" />
   <parameter name="AUTO_DEVICE_FAMILY" value="MAX 10" />
@@ -280,7 +280,7 @@
  <module
    name="mm_bridge_0"
    kind="altera_avalon_mm_bridge"
-   version="21.1"
+   version="17.0"
    enabled="1">
   <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
   <parameter name="ADDRESS_WIDTH" value="10" />
@@ -298,13 +298,13 @@
  <module
    name="modular_adc_0"
    kind="altera_modular_adc"
-   version="21.1"
+   version="17.0"
    enabled="1">
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
   <parameter name="CLOCK_FREQ" value="50000000" />
   <parameter name="CORE_VAR" value="2" />
   <parameter name="DEVICE_PART" value="10M50DAF484C6GES" />
-  <parameter name="ENABLE_DEBUG" value="0" />
+  <parameter name="ENABLE_DEBUG" value="1" />
   <parameter name="FAMILY" value="MAX 10" />
   <parameter name="MONITOR_COUNT_WIDTH" value="12" />
   <parameter name="clkdiv" value="2" />
@@ -492,7 +492,7 @@
  </module>
  <connection
    kind="avalon"
-   version="21.1"
+   version="17.0"
    start="mm_bridge_0.m0"
    end="modular_adc_0.sequencer_csr">
   <parameter name="arbitrationPriority" value="1" />
@@ -501,7 +501,7 @@
  </connection>
  <connection
    kind="avalon"
-   version="21.1"
+   version="17.0"
    start="master_0.master"
    end="modular_adc_0.sequencer_csr">
   <parameter name="arbitrationPriority" value="1" />
@@ -510,24 +510,24 @@
  </connection>
  <connection
    kind="clock"
-   version="21.1"
+   version="17.0"
    start="altpll_0.c0"
    end="modular_adc_0.adc_pll_clock" />
- <connection kind="clock" version="21.1" start="clk_0.clk" end="master_0.clk" />
- <connection kind="clock" version="21.1" start="clk_0.clk" end="mm_bridge_0.clk" />
+ <connection kind="clock" version="17.0" start="clk_0.clk" end="master_0.clk" />
+ <connection kind="clock" version="17.0" start="clk_0.clk" end="mm_bridge_0.clk" />
  <connection
    kind="clock"
-   version="21.1"
+   version="17.0"
    start="clk_0.clk"
    end="modular_adc_0.clock" />
  <connection
    kind="clock"
-   version="21.1"
+   version="17.0"
    start="clk_0.clk"
    end="altpll_0.inclk_interface" />
  <connection
    kind="conduit"
-   version="21.1"
+   version="17.0"
    start="altpll_0.locked_conduit"
    end="modular_adc_0.adc_pll_locked">
   <parameter name="endPort" value="" />
@@ -538,22 +538,22 @@
  </connection>
  <connection
    kind="reset"
-   version="21.1"
+   version="17.0"
    start="clk_0.clk_reset"
    end="master_0.clk_reset" />
  <connection
    kind="reset"
-   version="21.1"
+   version="17.0"
    start="clk_0.clk_reset"
    end="altpll_0.inclk_interface_reset" />
  <connection
    kind="reset"
-   version="21.1"
+   version="17.0"
    start="clk_0.clk_reset"
    end="mm_bridge_0.reset" />
  <connection
    kind="reset"
-   version="21.1"
+   version="17.0"
    start="clk_0.clk_reset"
    end="modular_adc_0.reset_sink" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />

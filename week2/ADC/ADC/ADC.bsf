@@ -4,20 +4,20 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2021  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
-agreement, including, without limitation, that your use is for
-the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
@@ -118,30 +118,37 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 528 88)
 		(output)
-		(text "modular_adc_0_response_channel[4..0]" (rect 0 0 161 12)(font "Arial" (font_size 8)))
-		(text "modular_adc_0_response_channel[4..0]" (rect 328 77 544 88)(font "Arial" (font_size 8)))
-		(line (pt 528 88)(pt 320 88)(line_width 3))
+		(text "modular_adc_0_response_startofpacket" (rect 0 0 162 12)(font "Arial" (font_size 8)))
+		(text "modular_adc_0_response_startofpacket" (rect 325 77 541 88)(font "Arial" (font_size 8)))
+		(line (pt 528 88)(pt 320 88)(line_width 1))
 	)
 	(port
 		(pt 528 104)
 		(output)
-		(text "modular_adc_0_response_data[11..0]" (rect 0 0 149 12)(font "Arial" (font_size 8)))
-		(text "modular_adc_0_response_data[11..0]" (rect 343 93 547 104)(font "Arial" (font_size 8)))
-		(line (pt 528 104)(pt 320 104)(line_width 3))
+		(text "modular_adc_0_response_endofpacket" (rect 0 0 159 12)(font "Arial" (font_size 8)))
+		(text "modular_adc_0_response_endofpacket" (rect 329 93 533 104)(font "Arial" (font_size 8)))
+		(line (pt 528 104)(pt 320 104)(line_width 1))
 	)
 	(port
 		(pt 528 120)
 		(output)
-		(text "modular_adc_0_response_startofpacket" (rect 0 0 162 12)(font "Arial" (font_size 8)))
-		(text "modular_adc_0_response_startofpacket" (rect 325 109 541 120)(font "Arial" (font_size 8)))
+		(text "modular_adc_0_response_empty" (rect 0 0 136 12)(font "Arial" (font_size 8)))
+		(text "modular_adc_0_response_empty" (rect 361 109 529 120)(font "Arial" (font_size 8)))
 		(line (pt 528 120)(pt 320 120)(line_width 1))
 	)
 	(port
 		(pt 528 136)
 		(output)
-		(text "modular_adc_0_response_endofpacket" (rect 0 0 159 12)(font "Arial" (font_size 8)))
-		(text "modular_adc_0_response_endofpacket" (rect 329 125 533 136)(font "Arial" (font_size 8)))
-		(line (pt 528 136)(pt 320 136)(line_width 1))
+		(text "modular_adc_0_response_channel[4..0]" (rect 0 0 161 12)(font "Arial" (font_size 8)))
+		(text "modular_adc_0_response_channel[4..0]" (rect 328 125 544 136)(font "Arial" (font_size 8)))
+		(line (pt 528 136)(pt 320 136)(line_width 3))
+	)
+	(port
+		(pt 528 152)
+		(output)
+		(text "modular_adc_0_response_data[11..0]" (rect 0 0 149 12)(font "Arial" (font_size 8)))
+		(text "modular_adc_0_response_data[11..0]" (rect 343 141 547 152)(font "Arial" (font_size 8)))
+		(line (pt 528 152)(pt 320 152)(line_width 3))
 	)
 	(drawing
 		(text "clk" (rect 161 43 340 99)(font "Arial" (color 128 0 0)(font_size 9)))
@@ -159,10 +166,11 @@ https://fpgasoftware.intel.com/eula.
 		(text "debugaccess" (rect 181 251 428 512)(font "Arial" (color 0 0 0)))
 		(text "modular_adc_0_response" (rect 321 43 774 99)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "valid" (rect 297 67 624 144)(font "Arial" (color 0 0 0)))
-		(text "channel" (rect 285 83 612 176)(font "Arial" (color 0 0 0)))
-		(text "data" (rect 299 99 622 208)(font "Arial" (color 0 0 0)))
-		(text "startofpacket" (rect 260 115 598 240)(font "Arial" (color 0 0 0)))
-		(text "endofpacket" (rect 265 131 596 272)(font "Arial" (color 0 0 0)))
+		(text "startofpacket" (rect 260 83 598 176)(font "Arial" (color 0 0 0)))
+		(text "endofpacket" (rect 265 99 596 208)(font "Arial" (color 0 0 0)))
+		(text "empty" (rect 290 115 610 240)(font "Arial" (color 0 0 0)))
+		(text "channel" (rect 285 131 612 272)(font "Arial" (color 0 0 0)))
+		(text "data" (rect 299 147 622 304)(font "Arial" (color 0 0 0)))
 		(text "reset" (rect 147 267 324 547)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "reset_n" (rect 181 291 404 592)(font "Arial" (color 0 0 0)))
 		(text " ADC " (rect 503 312 1036 634)(font "Arial" ))
@@ -174,8 +182,8 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 178 52)(pt 178 76)(line_width 1))
 		(line (pt 177 92)(pt 177 260)(line_width 1))
 		(line (pt 178 92)(pt 178 260)(line_width 1))
-		(line (pt 319 52)(pt 319 140)(line_width 1))
-		(line (pt 318 52)(pt 318 140)(line_width 1))
+		(line (pt 319 52)(pt 319 156)(line_width 1))
+		(line (pt 318 52)(pt 318 156)(line_width 1))
 		(line (pt 177 276)(pt 177 300)(line_width 1))
 		(line (pt 178 276)(pt 178 300)(line_width 1))
 		(line (pt 0 0)(pt 528 0)(line_width 1))

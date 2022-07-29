@@ -1,16 +1,16 @@
 Info: Starting: Create block symbol file (.bsf)
-Info: qsys-generate C:\Users\dinca\Documents\FPGA_Coursera_Course\Capstone\FPGA_Capstone_Building_FPGA_Projects_Course\week2\ADC\ADC.qsys --block-symbol-file --output-directory=C:\Users\dinca\Documents\FPGA_Coursera_Course\Capstone\FPGA_Capstone_Building_FPGA_Projects_Course\week2\ADC\ADC --family="MAX 10" --part=10M50DAF484C6GES
-Progress: Loading ADC/ADC.qsys
+Info: qsys-generate C:\Users\dinca\Documents\FPGA_Coursera_Course\Capstone\FPGA_Capstone_Building_FPGA_Projects_Course\week2\DE10liteADC\ADC.qsys --block-symbol-file --output-directory=C:\Users\dinca\Documents\FPGA_Coursera_Course\Capstone\FPGA_Capstone_Building_FPGA_Projects_Course\week2\DE10liteADC\ADC --family="MAX 10" --part=10M50DAF484C6GES
+Progress: Loading DE10liteADC/ADC.qsys
 Progress: Reading input file
-Progress: Adding altpll_0 [altpll 21.1]
+Progress: Adding altpll_0 [altpll 17.0]
 Progress: Parameterizing module altpll_0
-Progress: Adding clk_0 [clock_source 21.1]
+Progress: Adding clk_0 [clock_source 17.0]
 Progress: Parameterizing module clk_0
-Progress: Adding master_0 [altera_jtag_avalon_master 21.1]
+Progress: Adding master_0 [altera_jtag_avalon_master 17.0]
 Progress: Parameterizing module master_0
-Progress: Adding mm_bridge_0 [altera_avalon_mm_bridge 21.1]
+Progress: Adding mm_bridge_0 [altera_avalon_mm_bridge 17.0]
 Progress: Parameterizing module mm_bridge_0
-Progress: Adding modular_adc_0 [altera_modular_adc 21.1]
+Progress: Adding modular_adc_0 [altera_modular_adc 17.0]
 Progress: Parameterizing module modular_adc_0
 Progress: Building connections
 Progress: Parameterizing connections
@@ -22,18 +22,18 @@ Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
 Info: Starting: Create HDL design files for synthesis
-Info: qsys-generate C:\Users\dinca\Documents\FPGA_Coursera_Course\Capstone\FPGA_Capstone_Building_FPGA_Projects_Course\week2\ADC\ADC.qsys --synthesis=VERILOG --output-directory=C:\Users\dinca\Documents\FPGA_Coursera_Course\Capstone\FPGA_Capstone_Building_FPGA_Projects_Course\week2\ADC\ADC\synthesis --family="MAX 10" --part=10M50DAF484C6GES
-Progress: Loading ADC/ADC.qsys
+Info: qsys-generate C:\Users\dinca\Documents\FPGA_Coursera_Course\Capstone\FPGA_Capstone_Building_FPGA_Projects_Course\week2\DE10liteADC\ADC.qsys --synthesis=VERILOG --output-directory=C:\Users\dinca\Documents\FPGA_Coursera_Course\Capstone\FPGA_Capstone_Building_FPGA_Projects_Course\week2\DE10liteADC\ADC\synthesis --family="MAX 10" --part=10M50DAF484C6GES
+Progress: Loading DE10liteADC/ADC.qsys
 Progress: Reading input file
-Progress: Adding altpll_0 [altpll 21.1]
+Progress: Adding altpll_0 [altpll 17.0]
 Progress: Parameterizing module altpll_0
-Progress: Adding clk_0 [clock_source 21.1]
+Progress: Adding clk_0 [clock_source 17.0]
 Progress: Parameterizing module clk_0
-Progress: Adding master_0 [altera_jtag_avalon_master 21.1]
+Progress: Adding master_0 [altera_jtag_avalon_master 17.0]
 Progress: Parameterizing module master_0
-Progress: Adding mm_bridge_0 [altera_avalon_mm_bridge 21.1]
+Progress: Adding mm_bridge_0 [altera_avalon_mm_bridge 17.0]
 Progress: Parameterizing module mm_bridge_0
-Progress: Adding modular_adc_0 [altera_modular_adc 21.1]
+Progress: Adding modular_adc_0 [altera_modular_adc 17.0]
 Progress: Parameterizing module modular_adc_0
 Progress: Building connections
 Progress: Parameterizing connections
@@ -70,9 +70,9 @@ Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "c
 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
-Info: Reusing file C:/Users/dinca/Documents/FPGA_Coursera_Course/Capstone/FPGA_Capstone_Building_FPGA_Projects_Course/week2/ADC/ADC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: Reusing file C:/Users/dinca/Documents/FPGA_Coursera_Course/Capstone/FPGA_Capstone_Building_FPGA_Projects_Course/week2/DE10liteADC/ADC/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: mm_bridge_0_m0_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "mm_bridge_0_m0_rsp_width_adapter"
-Info: Reusing file C:/Users/dinca/Documents/FPGA_Coursera_Course/Capstone/FPGA_Capstone_Building_FPGA_Projects_Course/week2/ADC/ADC/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: Reusing file C:/Users/dinca/Documents/FPGA_Coursera_Course/Capstone/FPGA_Capstone_Building_FPGA_Projects_Course/week2/DE10liteADC/ADC/synthesis/submodules/altera_merlin_burst_uncompressor.sv
 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
 Info: ADC: Done "ADC" with 31 modules, 54 files

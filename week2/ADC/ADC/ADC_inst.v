@@ -11,10 +11,11 @@
 		.mm_bridge_0_s0_byteenable            (<connected-to-mm_bridge_0_s0_byteenable>),            //                       .byteenable
 		.mm_bridge_0_s0_debugaccess           (<connected-to-mm_bridge_0_s0_debugaccess>),           //                       .debugaccess
 		.modular_adc_0_response_valid         (<connected-to-modular_adc_0_response_valid>),         // modular_adc_0_response.valid
-		.modular_adc_0_response_channel       (<connected-to-modular_adc_0_response_channel>),       //                       .channel
-		.modular_adc_0_response_data          (<connected-to-modular_adc_0_response_data>),          //                       .data
 		.modular_adc_0_response_startofpacket (<connected-to-modular_adc_0_response_startofpacket>), //                       .startofpacket
 		.modular_adc_0_response_endofpacket   (<connected-to-modular_adc_0_response_endofpacket>),   //                       .endofpacket
+		.modular_adc_0_response_empty         (<connected-to-modular_adc_0_response_empty>),         //                       .empty
+		.modular_adc_0_response_channel       (<connected-to-modular_adc_0_response_channel>),       //                       .channel
+		.modular_adc_0_response_data          (<connected-to-modular_adc_0_response_data>),          //                       .data
 		.reset_reset_n                        (<connected-to-reset_reset_n>)                         //                  reset.reset_n
 	);
 
